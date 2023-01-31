@@ -1,0 +1,88 @@
+
+/*const net = require('net');
+const readline = require('readline');
+
+const client = new net.Socket();
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+client.connect(8000, '127.0.0.1', () => {
+    rl.question('What is your name? ', (name) => {
+        client.write(name);
+        rl.prompt();
+    });
+});
+
+rl.on('line', (line) => {
+    client.write(line);
+    rl.prompt();
+});
+
+client.on('data', (data) => {
+    console.log(data.toString());
+});
+
+client.on('close', () => {
+    console.log('Connection closed');
+});*/
+/*const net = require('net');
+const readline = require('readline');
+
+const client = new net.Socket();
+const rl = readline.createInterface(process.stdin, process.stdout);
+
+client.connect(5000, '127.0.0.1', () => {
+    console.log('Connected to the server');
+    rl.question("What's your name? ", (name) => {
+        client.write(name);
+    });
+});
+
+client.on('data', (data) => {
+    console.log(`${data}`);
+});
+
+rl.on('line', (line) => {
+    client.write(line);
+});
+
+client.on('close', () => {
+    console.log('Connection closed');
+});*/
+/*
+const net = require('net');
+
+const client = new net.Socket();
+
+client.connect(8080, '127.0.0.1', () => {
+    client.write(prompt('Enter your name: '));
+    client.on('data', data => {
+        console.log(data.toString());
+    });
+});
+
+process.stdin.on('data', data => {
+    client.write(data);
+});
+``
+//2 
+var net = require('net');
+var readline = require('readline');
+
+var client = new net.Socket();
+
+//Ask for the client's name
+var rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("What's your name? ", function(name) {
+    //connect to the server
+    client.connect(8000, '127.0.0.1', function() {
+        console.log('Connected to the server');
+        //send
+*/ 

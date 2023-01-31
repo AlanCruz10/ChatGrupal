@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Chat Group</title>
+      <link rel="stylesheet" type="text/css" href="client.css">
+      <script src="client.js"></script>
+      </head>
+      <body>
+        <header>
+          <h1>Chat Grupal</h1>
+          <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username">
+            <button type="submit">Iniciar sesión</button>
+          </form>
+        </header>
+        <section id="connected-users">
+          <h2>Conectados</h2>
+          <ul id="users-list"></ul>
+        </section>
+        <section id="chat-box">
+          <h2>Chat</h2>
+          <div id="messages-list"></div>
+          <form id="message-form">
+            <input type="text" id="message" name="message">
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </body>
+</html>
